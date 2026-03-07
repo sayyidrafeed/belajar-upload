@@ -1,0 +1,40 @@
+{
+  "name": "upload-file",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "react-router build",
+    "dev": "react-router dev",
+    "start": "wrangler pages dev ./build/client",
+    "deploy": "wrangler pages deploy ./build/client",
+    "typecheck": "react-router typegen && tsc",
+    "format": "oxfmt --write",
+    "format:check": "oxfmt --check",
+    "prepare": "bunx husky"
+  },
+  "dependencies": {
+    "@react-router/node": "^7.1.0",
+    "@react-router/serve": "^7.1.0",
+    "clsx": "^2.1.1",
+    "isbot": "^5.1.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-dropzone": "^14.3.5",
+    "react-router": "^7.1.0",
+    "tailwind-merge": "^2.6.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241231.0",
+    "@react-router/dev": "^7.1.0",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.3.2",
+    "oxlint": "^1.51.0",
+    "typescript": "^5.7.0",
+    "vite": "^6.0.0",
+    "wrangler": "^3.97.0"
+  }
+}

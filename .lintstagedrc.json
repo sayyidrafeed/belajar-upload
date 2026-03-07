@@ -1,0 +1,6 @@
+{
+  "*.{js,cjs,mjs,ts,tsx,jsx}": [
+    "oxlint --fix",
+    "npm run format"
+  ]
+}

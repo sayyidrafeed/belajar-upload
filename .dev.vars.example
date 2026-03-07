@@ -1,0 +1,7 @@
+# Cloudflare API Token
+# Get this from Cloudflare Dashboard → Profile → API Tokens
+CLOUDFLARE_API_TOKEN=
+
+# Cloudflare Account ID
+# Get this from Cloudflare Dashboard → Overview
+CLOUDFLARE_ACCOUNT_ID=
