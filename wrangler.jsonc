@@ -3,16 +3,16 @@
   "compatibility_date": "2024-01-01",
   "pages_build": {
     "plat": "cloudflare",
-    "config_dir": "functions"
+    "config_dir": "functions",
   },
   "r2_buckets": [
     {
       "binding": "UPLOAD_BUCKET",
-      "bucket_name": "upload-file-storage"
-    }
+      "bucket_name": "upload-file-storage",
+    },
   ],
   "vars": {
     "NODE_VERSION": "18",
-    "CLOUDFLARE_ACCOUNT_ID": "36dc452aa5893a7119e831fc5f949998"
-  }
+    "CLOUDFLARE_ACCOUNT_ID": "36dc452aa5893a7119e831fc5f949998",
+  },
 }

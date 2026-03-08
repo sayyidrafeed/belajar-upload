@@ -1,7 +1,7 @@
 import { reactRouter } from "@react-router/dev/vite";
-import { defineConfig } from "vite";
+import { defineConfig, type UserConfigExport } from "vite";
 
-export default defineConfig({
+const config: UserConfigExport & { workers?: { format: string } } = {
   plugins: [reactRouter()],
   build: {
     lib: {
@@ -19,4 +19,6 @@ export default defineConfig({
   workers: {
     format: "esm",
   },
-});
+};
+
+export default defineConfig(config);

@@ -1,2 +1,6 @@
-export PATH="$HOME/.bun/bin:$PATH"
-bun run lint-staged
+#!/bin/sh
+export FORCE_COLOR=1
+export CI=0
+
+bun lint
+bun x lint-staged
